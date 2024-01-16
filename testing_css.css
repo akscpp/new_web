@@ -7,6 +7,19 @@ body,
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Almond Nougat;
+    src: url('Almond Nougat.ttf');
+}
+@font-face {
+    font-family: Gellix;
+    src: url('Gellix-Regular.ttf');
+}
+@font-face {
+    font-family: GellixBold;
+    src: url('Gellix-Bold.ttf');
+}
+
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: inherit;
@@ -184,7 +197,7 @@ input::placeholder {
 #divSubText {
     color: #FFF1DE;
     text-align: center;
-    font-family: Gellix;
+    font-family: Quicksand;
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
@@ -224,13 +237,13 @@ input::placeholder {
 .lastRowText {
     color: #FFF1DE;
 
-    font-family: Gellix;
+    font-family: Quicksand;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
     padding: 1%;
-    margin-top: -15%;
+    margin-top: -12%;
 }
 
 .lastRowLogo {
@@ -253,13 +266,13 @@ input[type="submit"] {
     margin-left: -70%;
     border-radius: 15px;
     padding-top: 10%;
-    margin-top: -1%;
+    margin-top: -3%;
     padding-bottom: 10%;
     cursor: pointer;
     /* margin-bottom: 10%; */
     font-size: 20px;
     /* font-weight: bold; */
-    font-family: Gellix;
+    font-family: Quicksand;
     transition: background-color 0.3s ease;
 }
 
@@ -299,7 +312,7 @@ input[type="submit"] {
     color: #212156;
     margin-bottom: 3%;
     letter-spacing: 3.2px;
-    font-family: 'Work Sans';
+    font-family: Almond Nougat;
     text-align: center;
     font-style: normal;
     line-height: 120%;
@@ -318,7 +331,7 @@ input[type="submit"] {
     font-weight: 600;
     text-align: center;
     margin-top: 3%;
-    font-family: 'Work Sans';
+    font-family: Almond Nougat;
     font-style: normal;
     line-height: 120%;
     letter-spacing: 3.2px;
@@ -343,7 +356,7 @@ input[type="submit"] {
 
     color: #1E1C1F;
     font-size: 20px;
-    font-family: 'Gellix';
+    font-family: GellixBold;
     margin-top: 3px;
 
 }
@@ -382,7 +395,7 @@ input[type="submit"] {
 
 .titleServices2 {
     color: #1E1C1F;
-    font-family: Work Sans;
+    font-family: GellixBold;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
@@ -626,6 +639,7 @@ input[type="submit"] {
 
 .form_claim_last_row {
     margin-left: 5%;
+    margin-top: -5%;
 }
 
 .chat-form-container {
@@ -833,8 +847,8 @@ input[type="submit"] {
     .titleServices {
         padding-top: 7%;
         color: #1E1C1F;
-        font-family: Gellix;
-        font-size: 18px;
+        font-family: GellixBold;
+        font-size: 125%;
         font-style: normal;
         font-weight: 700;
         line-height: 80%;
@@ -846,8 +860,8 @@ input[type="submit"] {
     .titleServices2 {
 
         color: #1E1C1F;
-        font-family: Gellix;
-        font-size: 20px;
+        font-family: GellixBold;
+        font-size: 125%;
         font-style: normal;
         font-weight: 700;
         line-height: 80%;
@@ -860,7 +874,7 @@ input[type="submit"] {
     }
 
     .launchText {
-        font-size: 14px;
+        font-size: 145%;
     }
 
     .mod_title {
@@ -885,7 +899,7 @@ input[type="submit"] {
         text-transform: none;
         margin-top: -3%;
         font-family: Quicksand;
-        font-size: 16px;
+        font-size: 100%;
         font-weight: 700;
         line-height: 26px;
         letter-spacing: 0.16px;
@@ -940,7 +954,7 @@ input[type="submit"] {
     }
 
     #mainText {
-        font-size: 232%;
+        font-size: 254%;
         padding: 3%;
     }
 
@@ -979,15 +993,15 @@ input[type="submit"] {
     }
 
     .texts2 {
-        font-size: 16px;
+        font-size: 100%;
         word-spacing: 1.2px;
         text-align: unset;
         text-transform: none;
         margin-top: -4%;
         color: #656565;
-        font-family: Gellix;
+        font-family: Quicksand;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 20px;
         letter-spacing: 0.16px;
     }
@@ -995,8 +1009,8 @@ input[type="submit"] {
     .secondRow {
         background-color: #FFF1DE;
         cursor: pointer;
-        padding-left: 4vh;
-        padding-right: 6vh;
+        /* padding-left: 4vh;
+        padding-right: 6vh; */
         height: fit-content;
     }
 
@@ -1022,10 +1036,10 @@ input[type="submit"] {
         margin-top: 3.5vh;
         text-align: center;
         padding-left: 1vh;
-        font-family: Work Sans;
+        /* font-family: Work Sans; */
         margin: 0 1px;
         color: #30287D;
-        font-size: 32px;
+        font-size: 280%;
         font-style: normal;
         font-weight: 700;
         line-height: 60px;
@@ -1037,8 +1051,8 @@ input[type="submit"] {
         margin: 0 2%;
         color: #FFFCF4;
         text-align: center;
-        font-family: Work Sans;
-        font-size: 32px;
+        /* font-family: Work Sans; */
+        font-size: 280%;
         font-style: normal;
         font-weight: 700;
         line-height: 60px;
@@ -1101,7 +1115,7 @@ input[type="submit"] {
 
     .servicesdetails:first-child {
 
-        width: 105%;
+        width: 102%;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -1114,7 +1128,7 @@ input[type="submit"] {
     }
 
     .servicesdetails:nth-child(2) {
-        width: 105%;
+        width: 102%;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -1126,7 +1140,7 @@ input[type="submit"] {
     }
 
     .servicesdetails:nth-child(3) {
-        width: 105%;
+        width: 102%;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -1138,7 +1152,7 @@ input[type="submit"] {
     }
 
     .servicesdetails:nth-child(4) {
-        width: 105%;
+        width: 102%;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -1150,7 +1164,7 @@ input[type="submit"] {
     }
 
     .servicesdetails:nth-child(5) {
-        width: 105%;
+        width: 102%;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -1164,8 +1178,8 @@ input[type="submit"] {
     .whyCol {
         display: flex;
         flex-direction: column;
-        width: 115%;
-        margin-left: -10%;
+        width: 100%;
+        margin-left: 1%;
 
     }
 
@@ -1175,14 +1189,14 @@ input[type="submit"] {
     }
 
     #thirdRow {
-        padding-left: 4vh;
-        padding-right: 6vh;
+        /* padding-left: 4vh;
+        padding-right: 6vh; */
         height: fit-content;
     }
 
     .services {
         display: flex;
-        width: 91%;
+        width: 97%;
         display: flex;
         flex-direction: column;
         white-space: nowrap;
@@ -1195,13 +1209,13 @@ input[type="submit"] {
     .services2 {
         display: flex;
         flex-direction: column;
-        width: 103%;
+        width: 97%;
         margin-top: 2vh;
     }
 
     .services-container {
-        margin-left: -10%;
+        margin-left: 3%;
         margin-top: 30%;
-        width: 128%;
+        width: 100%;
     }
 }

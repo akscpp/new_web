@@ -31,17 +31,9 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@100;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Almond+Nougat:wght@400;700&display=swap">
-    <link href='https://fonts.googleapis.com/css?family=Chela+One:wght@100;200;300;400;500;600;700&display=swap'
-        rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Gellix:wght@100;200;300;400;500;600;700&display=swap'
-        rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
     <title>Premium Pet Boarding</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -165,7 +157,7 @@
                                     </div>
                                     <div class="form-group">
                                         <!-- <label class="form_texts" for="phone"></label> -->
-                                        <input type="text" id="phone" name="Mobile" placeholder="Mobile No." required>
+                                        <input type="text" id="phone" name="Mobile" placeholder="Mobile" required>
                                     </div>
                                     <div>
                                         <input type="submit" value="Claim Access" name="submit">
@@ -354,7 +346,7 @@
                                         </div>
                                         <div class="form-group">
                                             <!-- <label class="form_texts" for="phone"></label> -->
-                                            <input type="text" id="phone" name="Mobile" placeholder="Mobile No."
+                                            <input type="text" id="phone" name="Mobile" placeholder="Mobile"
                                                 required>
                                         </div>
                                         <div>
@@ -398,18 +390,18 @@
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxrZMnYH9n0pqKSxYcja0rNVyop7VC5QxsYz8SmTHm7GA4jrQNiPXqeg0NrysGDJbzpiA/exec';
         const form = document.forms['google-sheet'];
         const modal = document.getElementById('myModal');
-        
-        
-        
+
+
+
         form.addEventListener('submit', e => {
-            
+
             e.preventDefault();
             // Display the overlay
             document.querySelector('.overlay').style.display = 'block';
 
             // Display the modal
             modal.style.display = 'flex';
-            
+
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
 

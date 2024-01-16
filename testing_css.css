@@ -125,7 +125,7 @@ input::placeholder {
     flex-direction: column;
     background-size: cover;
     background-position: top;
-    position: relative;
+    /* position: relative; */
     /* justify-content: space-between; */
     background-color: rgb(33, 33, 86);
     /* z-index: 1; */
@@ -205,7 +205,7 @@ input::placeholder {
 
     background-size: cover;
     background-position: top;
-    position: relative;
+    /* position: relative; */
     height: fit-content;
     padding: 20px;
     margin-bottom: 0px;
@@ -714,6 +714,7 @@ input[type="submit"] {
     backdrop-filter: blur(8px);
 
 }
+
 
 .alertImage {
     width: 100px;

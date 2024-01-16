@@ -354,24 +354,25 @@
                                         </div>
                                         <div class="form-group">
                                             <!-- <label class="form_texts" for="phone"></label> -->
-                                            <input type="text" id="phone" name="Mobile" placeholder="Mobile No." required>
+                                            <input type="text" id="phone" name="Mobile" placeholder="Mobile No."
+                                                required>
                                         </div>
                                         <div>
                                             <input type="submit" value="Claim Access" name="submit">
                                         </div>
                                     </form>
                                 </div>
-    
-    
-    
+
+
+
                                 <div id="myModal" class="modal">
                                     <img class="alertImage" src="icon_of_form.png">
                                     <p class="alertText1">Thanks for showing interest!</p>
                                     <p class="alertText2"> We'll get back to you soon!</p>
                                 </div>
-                                
+
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -397,23 +398,28 @@
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxrZMnYH9n0pqKSxYcja0rNVyop7VC5QxsYz8SmTHm7GA4jrQNiPXqeg0NrysGDJbzpiA/exec';
         const form = document.forms['google-sheet'];
         const modal = document.getElementById('myModal');
-
+        
+        
+        
         form.addEventListener('submit', e => {
+            
             e.preventDefault();
+            // Display the overlay
+            document.querySelector('.overlay').style.display = 'block';
+
+            // Display the modal
+            modal.style.display = 'flex';
+            
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                    // Display the overlay
-                    document.querySelector('.overlay').style.display = 'block';
 
-                    // Display the modal
-                    modal.style.display = 'flex';
 
                     // Automatically hide the modal after a few seconds
-                    // setTimeout(() => {
-                    //     modal.style.display = 'none';
-                    //     // Hide the overlay
-                    //     document.querySelector('.overlay').style.display = 'none';
-                    // }, 30000);
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                        // Hide the overlay
+                        document.querySelector('.overlay').style.display = 'none';
+                    }, 5000);
                 })
                 .catch(error => console.error('Error!', error.message));
         });
